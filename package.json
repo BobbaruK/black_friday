@@ -1,0 +1,47 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "2.5.2",
+  "description": "Simple front-end boilerplate using Gulp 4",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecodercoder/frontend-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "CSSeco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecodercoder/frontend-boilerplate/issues"
+  },
+  "homepage": "https://github.com/thecodercoder/frontend-boilerplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.1",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-v4-rtl": "^4.4.1-2",
+    "jquery": "^3.5.1",
+    "gsap": "^3.5.1",
+    "npm": "^6.14.9",
+    "popper.js": "^1.16.1"
+  }
+}

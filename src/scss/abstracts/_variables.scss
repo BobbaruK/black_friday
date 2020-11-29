@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Colors
+    // Bootstrap overwrite
+$theme-colors: (
+  "primary"                   :   #0074d9,
+  "secondary"                 :   #6c757d,
+  "success"                   :   #28a745,
+  "info"                      :   #17a2b8,
+  "warning"                   :   #ffc107,
+  "danger"                    :   #dc3545,
+  "light"                     :   #f8f9fa,
+  "dark"                      :   #343a40
+);
+
+// Colors
+$brand-color                  :   #0000FF;
+$text-color                   :   #000000;
+
+// CSSeco BreakPoints
+$csseco_bp_320	              :    320px;
+$csseco_bp_576	              :    576px;
+$csseco_bp_768	              :    768px;
+$csseco_bp_992	              :    992px;
+$csseco_bp_1200	              :    1200px;
+
+
+// CSS variables
+:root {
+
+  // Spacing
+  --margin_padding_bottom     :   20px;
+  @media screen and (min-width: $csseco_bp_576) {
+    --margin_padding_bottom   :   30px;
+  }
+  @media screen and (min-width: $csseco_bp_768) {
+    --margin_padding_bottom   :   35px;
+  }
+  @media screen and (min-width: $csseco_bp_992) {
+    --margin_padding_bottom   :   40px;
+  }
+  @media screen and (min-width: $csseco_bp_1200) {
+    --margin_padding_bottom   :   50px;
+  }
+
+}
+
+// Misc
+    // Bootstrap overwrite
+$border-radius                :   .25rem;

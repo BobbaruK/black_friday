@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+.form-wrap {
+  .formEl {
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    select {}
+    &.phone {
+      .phone-prefix,	
+      .phone-number {
+        float: left;
+        width: 100%;
+      }
+      .phone-prefix {
+        max-width: 75px;
+
+      }	
+      .phone-number {
+        max-width: calc(100% - 75px);
+      }
+    }
+    button[type=submit],
+    div#checksubmit {
+      &:hover {}
+    }
+    div#checksubmit {
+      display: none;
+      opacity: .7;
+    }
+    .inputerror,
+    .agreementerror {
+      color: red;
+      padding: 3px 0 7px;
+      font-size: 75%;
+      margin-bottom: 7px;
+    }
+    .agreement {
+      margin-top: 10px;
+      input[type="checkbox"],
+      label {
+        display: inline;
+        font-size: 14px;
+      }
+    }
+  }	
+}

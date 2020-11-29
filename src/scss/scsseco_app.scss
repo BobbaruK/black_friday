@@ -1,0 +1,306 @@
+// https://github.com/HugoGiraudel/sass-boilerplate
+
+@charset 'UTF-8';
+// ======================================
+// 1. Bootstrap imports
+// ======================================
+//      * replace /bootstrap/ sith /bootstrap-v4-rtl/
+@import 'abstracts/variables';                                          // overide BS variables
+// @import "../../node_modules/bootstrap/scss/bootstrap";               // Full BS
+@import "../../node_modules/bootstrap/scss/functions";                  // Required
+@import "../../node_modules/bootstrap/scss/variables";                  // Required
+@import "../../node_modules/bootstrap/scss/mixins";                     // Required  
+@import "../../node_modules/bootstrap/scss/reboot";                     // Optional
+@import "../../node_modules/bootstrap/scss/grid";                       // Optional
+@import "../../node_modules/bootstrap/scss/type";                       // Optional
+@import "../../node_modules/bootstrap/scss/images";                     // Optional
+
+    // BS Utilities
+// @import "../../node_modules/bootstrap/scss/utilities";                  // Optional - All utilities
+// @import "../../node_modules/bootstrap/scss/utilities/align";            // Optional
+// @import "../../node_modules/bootstrap/scss/utilities/background";       // Optional
+
+    // BS Utilities - Border
+    // * https://getbootstrap.com/docs/4.5/utilities/borders/
+// @import "../../node_modules/bootstrap/scss/utilities/borders";          // Optional
+
+    // BS Utilities - Clearfix
+    // * https://getbootstrap.com/docs/4.5/utilities/clearfix/
+// @import "../../node_modules/bootstrap/scss/utilities/clearfix";         // Optional
+
+    // BS Utilities - Display property
+    // * https://getbootstrap.com/docs/4.5/utilities/display/
+@import "../../node_modules/bootstrap/scss/utilities/display";          // Optional
+
+    // BS Utilities - Embeds
+    // * https://getbootstrap.com/docs/4.5/utilities/embed/
+@import "../../node_modules/bootstrap/scss/utilities/embed";            // Optional
+
+    // BS Utilities - Flex
+    // * https://getbootstrap.com/docs/4.5/utilities/flex/
+@import "../../node_modules/bootstrap/scss/utilities/flex";             // Optional
+
+    // BS Utilities - Float
+    // * https://getbootstrap.com/docs/4.5/utilities/float/
+// @import "../../node_modules/bootstrap/scss/utilities/float";            // Optional
+
+    // BS Utilities - Interactions
+    // * https://getbootstrap.com/docs/4.5/utilities/interactions/
+@import "../../node_modules/bootstrap/scss/utilities/interactions";     // Optional
+
+    // BS Utilities - Overflow
+    // * https://getbootstrap.com/docs/4.5/utilities/overflow/
+// @import "../../node_modules/bootstrap/scss/utilities/overflow";         // Optional
+
+    // BS Utilities - Position
+    // * https://getbootstrap.com/docs/4.5/utilities/position/
+// @import "../../node_modules/bootstrap/scss/utilities/position";         // Optional
+
+    // BS Utilities - Screen readers
+    // * https://getbootstrap.com/docs/4.5/utilities/screen-readers/
+@import "../../node_modules/bootstrap/scss/utilities/screenreaders";    // Optional
+
+    // BS Utilities - Shadows
+    // * https://getbootstrap.com/docs/4.5/utilities/shadows/
+@import "../../node_modules/bootstrap/scss/utilities/shadows";          // Optional
+
+    // BS Utilities - Sizing
+    // * https://getbootstrap.com/docs/4.5/utilities/sizing/
+// @import "../../node_modules/bootstrap/scss/utilities/sizing";           // Optional
+
+    // BS Utilities - Spacing
+    // * https://getbootstrap.com/docs/4.5/utilities/spacing/
+@import "../../node_modules/bootstrap/scss/utilities/spacing";          // Optional
+
+    // BS Utilities - Stretched link
+    // * https://getbootstrap.com/docs/4.5/utilities/stretched-link/
+// @import "../../node_modules/bootstrap/scss/utilities/stretched-link";   // Optional
+
+    // BS Utilities - Text
+    // * https://getbootstrap.com/docs/4.5/utilities/text/
+@import "../../node_modules/bootstrap/scss/utilities/text";             // Optional
+
+    // BS Utilities - Visibility
+    // * https://getbootstrap.com/docs/4.5/utilities/visibility/
+// @import "../../node_modules/bootstrap/scss/utilities/visibility";       // Optional
+
+    // BS Alert
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment alert.js
+    // * https://getbootstrap.com/docs/4.5/components/alerts/
+// @import "../../node_modules/bootstrap/scss/alert";                      // Optional
+
+    // BS Badge
+    // * https://getbootstrap.com/docs/4.5/components/badge/
+// @import "../../node_modules/bootstrap/scss/badge";                      // Optional
+
+    // BS Breadcrumb
+    // * https://getbootstrap.com/docs/4.5/components/breadcrumb/
+// @import "../../node_modules/bootstrap/scss/breadcrumb";                 // Optional
+
+    // BS Buttons
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment button.js
+    // * https://getbootstrap.com/docs/4.5/components/buttons/
+// @import "../../node_modules/bootstrap/scss/buttons";                    // Optional
+
+    // BS Button group 
+    // * https://getbootstrap.com/docs/4.5/components/button-group/
+// @import "../../node_modules/bootstrap/scss/button-group";               // Optional
+
+    // BS Cards
+    // * https://getbootstrap.com/docs/4.5/components/card/
+// @import "../../node_modules/bootstrap/scss/card";                       // Optional
+
+    // BS Carousel
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment carousel.js
+    // * https://getbootstrap.com/docs/4.5/components/carousel/
+// @import "../../node_modules/bootstrap/scss/carousel";                   // Optional
+
+    // BS Close
+    // * Close 
+    // * https://getbootstrap.com/docs/4.5/utilities/close-icon/
+// @import "../../node_modules/bootstrap/scss/close";                      // Optional
+
+    // BS Dropdowns
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment dropdown.js
+    // * ==
+    // * go to ./site.html and uncomment popper.min.js
+    // * ==
+    // * https://getbootstrap.com/docs/4.5/components/dropdowns/
+// @import "../../node_modules/bootstrap/scss/dropdown";                   // Optional
+
+    // BS Forms
+    // * https://getbootstrap.com/docs/4.5/components/forms/
+@import "../../node_modules/bootstrap/scss/forms";                      // Optional
+
+    // BS Input group
+    // * https://getbootstrap.com/docs/4.5/components/input-group/
+// @import "../../node_modules/bootstrap/scss/input-group";                // Optional
+
+    // BS Jumbotron
+    // * https://getbootstrap.com/docs/4.5/components/jumbotron/
+// @import "../../node_modules/bootstrap/scss/jumbotron";                  // Optional
+
+    // BS List group
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment tab.js
+    // * uncomment in this file(csseco-styles.scss) nav plugin
+    // * https://getbootstrap.com/docs/4.5/components/list-group/
+// @import "../../node_modules/bootstrap/scss/list-group";                 // Optional
+
+    // BS Media object
+    // * https://getbootstrap.com/docs/4.5/components/media-object/
+// @import "../../node_modules/bootstrap/scss/media";                      // Optional
+
+    // BS Modal 
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment modal.js
+    // * https://getbootstrap.com/docs/4.5/components/modal/
+// @import "../../node_modules/bootstrap/scss/modal";                      // Optional
+
+    // BS Navs
+    // * https://getbootstrap.com/docs/4.5/components/navs/
+    // * for tabs:
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment tab.js
+    // * https://getbootstrap.com/docs/4.5/components/navs/#javascript-behavior
+// @import "../../node_modules/bootstrap/scss/nav";                        // Optional
+
+    // BS Navbar
+    // * for responsive
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment collapse.js
+    // * for dropdown
+    // * uncomment dropdown.js
+    // * https://getbootstrap.com/docs/4.5/components/navbar/
+// @import "../../node_modules/bootstrap/scss/navbar";                     // Optional
+
+    // BS Pagination
+    // * https://getbootstrap.com/docs/4.5/components/pagination/
+// @import "../../node_modules/bootstrap/scss/pagination";                 // Optional
+
+    // BS Popover
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment popover.js and tooltip.js
+    // * ==
+    // * go to ./src/js/scripts.js and add this:
+    // * $(function () {
+	// *	$('[data-toggle="popover"]').popover();
+    // * })
+    // * ==
+    // * go to ./site.html and uncomment popper.min.js
+    // * ==
+    // * https://getbootstrap.com/docs/4.5/components/popovers/
+// @import "../../node_modules/bootstrap/scss/popover";                    // Optional
+
+    // BS Progress
+    // * https://getbootstrap.com/docs/4.5/components/progress/
+// @import "../../node_modules/bootstrap/scss/progress";                   // Optional
+
+    // BS Tables
+    // * https://getbootstrap.com/docs/4.5/content/tables/
+// @import "../../node_modules/bootstrap/scss/tables";                     // Optional
+
+    // BS Spinners
+    // * https://getbootstrap.com/docs/4.5/components/spinners/
+// @import "../../node_modules/bootstrap/scss/spinners";                   // Optional
+
+    // BS Toast
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment toast.js
+    // * ==
+    // * go to ./src/js/scripts.js and add this:
+    // *
+    // * call toast
+    // * $("#myBtn").click(function(){
+	// *	$('.toast').toast('show');
+    // * });
+    // *
+    // * options
+    // * $('.toast').toast({
+	// *	animation	: true,
+	// *	autohide	: true,
+	// *	delay			: 1500
+	// * });
+    // * ==
+    // * https://getbootstrap.com/docs/4.5/components/toasts/
+// @import "../../node_modules/bootstrap/scss/toasts";                     // Optional
+
+    // BS Tooltips
+    // * search in './gulpfile.js' for 'jsTaskBS' task
+    // * uncomment tooltip.js
+    // * ==
+    // * go to ./src/js/scripts.js and add this:
+    // * $(function () {
+	// *	$('[data-toggle="tooltip"]').tooltip();
+    // * })
+    // * ==
+    // * go to ./site.html and uncomment popper.min.js
+    // * ==
+    // * https://getbootstrap.com/docs/4.5/components/tooltips/
+// @import "../../node_modules/bootstrap/scss/tooltip";                    // Optional
+
+    // BS Transitions
+    // * has collapse and fade classes
+    // * collapse for Accordions 
+    // * fade animation for alerts, tabs, etc
+// @import "../../node_modules/bootstrap/scss/transitions";                // Optional
+
+
+
+// ======================================
+// 2. Configuration and helpers
+// ======================================
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+
+
+// ======================================
+// 3. Base stuff
+// ======================================
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
+
+
+
+// ======================================
+// 4. Layout-related sections
+// ======================================
+@import 'layout/header';
+@import 'layout/footer';
+
+
+
+// ======================================
+// 5. Components
+// ======================================
+@import 'components/form';
+@import 'components/button';
+
+
+
+// ======================================
+// 6. Sections styles
+// ======================================
+@import 'sections/section1';
+@import 'sections/section2';
+@import 'sections/section3';
+@import 'sections/section4';
+@import 'sections/section5';
+@import 'sections/section6';
+@import 'sections/section7';
+@import 'sections/section8';
+@import 'sections/section9';
+
+
+
+// ======================================
+// 7. Page-specific styles
+// ======================================
+@import 'pages/home'; 
