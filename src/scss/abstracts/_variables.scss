@@ -16,8 +16,12 @@ $theme-colors: (
 );
 
 // Colors
-$brand-color                  :   #0000FF;
-$text-color                   :   #000000;
+$brand-color                  :   #fcd602;
+$text-color                   :   #030303;
+$black                        :   $text-color;
+$yellow1                      :   $brand-color;
+$yellow2                      :   #fa9300;
+$yellow3                      :   #fcd402;
 
 // CSSeco BreakPoints
 $csseco_bp_320	              :    320px;
@@ -49,4 +53,4 @@ $csseco_bp_1200	              :    1200px;
 
 // Misc
     // Bootstrap overwrite
-$border-radius                :   .25rem;
+$border-radius                :   .7rem;

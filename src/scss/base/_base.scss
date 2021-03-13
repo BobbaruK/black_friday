@@ -7,6 +7,7 @@
  */
  html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /**
@@ -27,8 +28,58 @@
 body {
   color: $text-color;
   font-family: 'Roboto', sans-serif;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fcd602+0,fcd602+12,fa9300+100 */
+  background: $yellow1; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, $yellow1 0%, $yellow1 12%, $yellow2 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, $yellow1 0%,$yellow1 12%,$yellow2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, $yellow1 0%,$yellow1 12%,$yellow2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$yellow1', endColorstr='$yellow2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 275% 275%;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
   #site-wrapper {
+    height: 100%;
     overflow: hidden;
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.container-fluid {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  > .coloane {
+    width: 100%;
+    &.col_1 {
+      @media screen and (min-width: $csseco_bp_992) {
+        flex: 0 0 55%;
+        max-width: 55%;
+      }
+    }
+    &.col_2 {
+      @media screen and (min-width: $csseco_bp_992) {
+        flex: 0 0 45%;
+        max-width: 45%;
+      }
+    }
+  }
+  @media screen and (min-width: $csseco_bp_992) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: $csseco_bp_1200) {
+    padding: 0 80px;
   }
 }
 
@@ -50,5 +101,5 @@ a {
  */
  section,
  footer#footer.siteFooter {
-  padding: var(--margin_padding_bottom) 0;
+  // padding: var(--margin_padding_bottom) 0;
  }

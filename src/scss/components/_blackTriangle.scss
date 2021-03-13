@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the black triangle component. (is  this really a component?)
+// -----------------------------------------------------------------------------
+
+.blackTriangle {
+  background-color: $black;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  display: none;
+  height: 50vw;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 52%;
+  z-index: -1;
+  @media screen and (min-width: $csseco_bp_992) {
+    display: block;
+  }
+  @media screen and (min-width: $csseco_bp_1200) {
+    width: 46%;
+  }
+}

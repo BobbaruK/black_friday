@@ -2,4 +2,118 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-header#header.siteHeader {}
+header#header.siteHeader {
+  background-color: $black;
+  padding: 15px 0;
+  .container-fluid {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    @media screen and (min-width: $csseco_bp_992) {
+      flex-direction: row-reverse;
+    }
+  }
+  .logo {
+    flex: 0 0 88px;
+    max-width: 88px;
+    img {
+      height: auto;
+      width: 100%;
+      @media screen and (min-width: $csseco_bp_1200) {}
+    }
+    @media screen and (min-width: $csseco_bp_1200) {
+      flex: 0 0 80px;
+      max-width: 80px;
+    }
+    @media screen and (min-width: 1400px) {
+      flex: 0 0 120px;
+      max-width: 120px;
+    }
+    @media screen and (min-width: 1920px) {
+      flex: 0 0 150px;
+      max-width: 150px;
+    }
+    @media screen and (min-width: 3556px) {
+      flex: 0 0 300px;
+      max-width: 300px;
+    }
+
+  }
+  .cogUser {
+    flex: 1 0 0;
+    padding: 0 15px;
+    .cu {
+      align-items: center;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      width: 100%;
+      .cogUser__lines,
+      .cogUser__cog,
+      .cogUser__user {
+        height: 100%;
+        width: 100%;
+      }
+      .cogUser__cog,
+      .cogUser__user {
+        cursor: pointer;
+        margin-right: 10px;
+        max-width: 30px;
+        path {
+          fill: $yellow3;
+        }
+      }
+      .cogUser__lines {
+        display: none;
+        margin-right: auto;
+        max-width: 140px;
+        @media screen and (min-width: $csseco_bp_992) {
+          display: block;
+        } 
+        @media screen and (min-width: $csseco_bp_1200) {
+          margin-left: 10px;
+          max-width: 120px;
+        }
+        @media screen and (min-width: 1600px) {
+          max-width: 150px;
+        }
+        @media screen and (min-width: 1920px) {
+          max-width: 200px;
+        }
+        @media screen and (min-width: 3556px) {
+          max-width: 350px;
+        }
+      }
+      .cogUser__cog,
+      .cogUser__user {
+        @media screen and (min-width: $csseco_bp_1200) {
+          max-width: 40px;
+          margin-right: 25px;
+        }
+        @media screen and (min-width: 1600px) {
+          max-width: 50px;
+        }
+        @media screen and (min-width: 3556px) {
+          max-width: 100px;
+        }
+      }
+      @media screen and (min-width: $csseco_bp_992) {
+        justify-content: flex-end;
+      }
+      @media screen and (min-width: 1920px) {
+        padding-right: 50px;
+      }
+    }
+    @media screen and (min-width: $csseco_bp_992) {
+      text-align: right;
+      padding: 0 30px 0 50px;
+    }
+  }
+  @media screen and (min-width: $csseco_bp_992) {
+    background-color: transparent;
+  }
+  @media screen and (min-width: $csseco_bp_1200) {
+    padding-top: 50px;
+  }
+}

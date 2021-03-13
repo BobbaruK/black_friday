@@ -30,6 +30,8 @@ const files = {
     svgsimgPathTo   : 'dist/imgs/',
     gifsimgPath     : 'src/imgs/**/*.gif',
     gifsimgPathTo   : 'dist/imgs/',
+    webpsimgPath    : 'src/imgs/**/*.webp',
+    webpsimgPathTo  : 'dist/imgs/',
     html_r          : 'site.html'
 }
 
@@ -136,14 +138,6 @@ function deleteTask() {
         .pipe(clean())
 }
 
-// Edit index.html - imgs src
-function editHTML() {
-    return src(['index.html'])
-        .pipe(replace('src/', 'dist/'))
-        // .pipe(replace('<img src="', '<img data-src="')) // 4 lazyload
-        .pipe(dest('.'))
-}
-
 // Cachebust
 var cbString = new Date().getTime();
 function cacheBustTask(){
@@ -152,7 +146,7 @@ function cacheBustTask(){
         .pipe(dest('.'));
 }
 
-// Copy svg and gifs imgs bc tinypng cannot optimize them
+// Copy svg, gifs and webp imgs bc tinypng cannot optimize them
 function copysvgs() {
     return src(files.svgsimgPath)
         .pipe(dest(files.svgsimgPathTo))
@@ -160,6 +154,10 @@ function copysvgs() {
 function copygifs() {
     return src(files.gifsimgPath)
         .pipe(dest(files.gifsimgPathTo))
+}
+function copywebp() {
+    return src(files.webpsimgPath)
+        .pipe(dest(files.webpsimgPathTo))
 }
 
 // Minify Img
@@ -189,14 +187,6 @@ function editHTML() {
         .pipe(dest('.'))
 }
 
-// Cachebust
-var cbString = new Date().getTime();
-function cacheBustTask(){
-    return src(['index.html'])
-        .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-        .pipe(dest('.'));
-}
-
 // Edit csseco-style.css - imgs src
 function editCSS() {
     return src(['dist/css/*.css'])
@@ -220,11 +210,7 @@ function watchTask(){
 }
 
 // When the site is ready to deploy
-exports.end = series(
-    copysvgs,
-    copygifs,
-    // minImg,
-    // webpimgs,
+exports.deep = series(
     jquery,
     popperjs,
     scssTask, 
@@ -242,15 +228,28 @@ exports.end = series(
     editCSS
 );
 
+// Minify via Tinypng
+exports.tiny = series(
+    copysvgs,
+    copygifs,
+    copywebp,
+    minImg,
+    )
+    
+// Minify via webp
+exports.webp = series(
+    copysvgs,
+    copygifs,
+    copywebp,
+    webpimgs,
+)
+
 // Export the default Gulp task so it can be run
 exports.default = series(
     scssTask, 
     jsTask_concat, 
     jsTask_separate, 
     jsTaskBS,
-    gsap,
-    gsap_ScrollTrigger,
-    gsap_ScrollTo,
     htmlTask,
     watchTask
 );

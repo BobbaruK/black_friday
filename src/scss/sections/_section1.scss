@@ -1,3 +1,74 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page -> #section1
 // -----------------------------------------------------------------------------
+
+section#section1.subHeader {
+  .ttl {
+    text-align: center;
+    h1 {
+      display: inline-block;
+      font-family: 'Fugaz One', sans-serif;
+      font-size: 19vw;
+      font-size: clamp(60px, 19vw, 120px);
+      text-transform: uppercase;
+      line-height: 0.8;
+      margin: 30px auto 0; 
+      padding: 20px 0;
+      position: relative;
+      text-shadow: 7px -1px 4px rgba($text-color, 0.6);
+      span {
+        display: block;
+        position: relative;
+        text-align: left;
+        z-index: 1;
+        &.black {
+          color: #FFF;
+          text-indent: 5px;
+        }
+        &.friday {
+          color: $brand-color;
+          text-indent: clamp(12px, 3vw, 20px);
+          @media screen and (min-width: $csseco_bp_992) {
+            text-indent: clamp(15px, 5.4vw, 15px);
+          }
+          @media screen and (min-width: 1400px) {
+            text-indent: clamp(15px, 5.4vw, 20px);
+          }
+        }
+      }
+      svg {
+        bottom: 0;
+        height: 100%;
+        left: -7%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: calc(100% + clamp(30px, 16vw, 100px));
+        z-index: 0;
+        @media screen and (min-width: $csseco_bp_1200) {
+          width: calc(100% + clamp(30px, 11vw, 70px));
+        }
+        @media screen and (min-width: 1400px) {
+          width: calc(100% + clamp(30px, 11vw, 90px));
+        }
+        @media screen and (min-width: 1800px) {
+          left: -9.4%;
+          width: calc(100% + clamp(30px, 11vw, 120px));
+        }
+      }
+      @media screen and (min-width: $csseco_bp_992) {
+        font-size: clamp(40px, 7vw, 140px);
+        transform: translateX(-6vw);
+      }
+      @media screen and (min-width: $csseco_bp_1200) {
+        transform: translateX(-3vw);
+      }
+      @media screen and (min-width: 1600px) {
+        font-size: clamp(40px,8vw,140px);
+      }
+      @media screen and (min-width: 1920px) {
+        font-size: clamp(160px,8vw,200px);
+      }
+    }
+  }
+}

@@ -1,8 +1,5 @@
-	/*!
-	* Misc scripts
-  */
+/*! Misc scripts */
 (function () {
-	/*! Misc scripts */
 
 	//------------------------------------
 	// Get the year to #lp_year

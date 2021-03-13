@@ -10,283 +10,107 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="dist/css/scsseco_app.css?cb=1579787740102">
-		<title>BrandName</title>
+		<title>Black Friday</title>
 		<style></style>
 		<script></script>
 	</head>
 	<body id="top">
 		<div id="site-wrapper">
-			<header id="header" class="siteHeader">Header<hr></header>
-			<section id="section1" class="subHeader subHeader1">
-				Content
-
-				<!-- test -->
-				<div style="height: 100vh; background-color: turquoise; position: relative;">
-					<div class="patrat" style="background: tomato; position: absolute; width: 200px; height: 200px; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center;" >
-						test
+			<div class="scssecoModalWrapper" id="modal_cog" data-cssecomodal="cog">
+				<div class="scssecoModalOverlay" data-cssecomodaltarget="close"></div>
+				<div class="scssecoModal">
+					<svg class="scssecoModal__close" data-cssecomodaltarget="close" viewBox="0 0 365.696 365.696" xmlns="http://www.w3.org/2000/svg">
+						<path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/>
+					</svg>
+					<h2>Cog Modal</h2>
+				</div>
+			</div>
+			<div class="scssecoModalWrapper" id="modal_user" data-cssecomodal="user">
+				<div class="scssecoModalOverlay" data-cssecomodaltarget="close"></div>
+				<div class="scssecoModal">
+					<svg class="scssecoModal__close" data-cssecomodaltarget="close" viewBox="0 0 365.696 365.696" xmlns="http://www.w3.org/2000/svg">
+						<path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/>
+					</svg>
+					<h2>User Modal</h2>
+				</div>
+			</div>
+			<div class="blackTriangle"></div>
+			<header id="header" class="siteHeader">
+				<div class="container-fluid">
+					<div class="logo">
+						<a href="#">
+							<img src="dist/imgs/logo.webp" alt="">
+						</a>
+					</div>
+					<div class="cogUser">
+						<div class="cu">
+							<svg class="cogUser__lines" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 337 94">
+								<path fill-rule="evenodd"  fill="rgb(252, 214, 2)" d="M336.223,2.904 L246.916,91.728 C246.762,91.882 246.558,91.960 246.356,91.960 C246.154,91.960 245.950,91.882 245.797,91.728 C245.487,91.421 245.487,90.922 245.797,90.615 L335.104,1.791 C335.411,1.483 335.916,1.483 336.223,1.791 C336.533,2.098 336.533,2.597 336.223,2.904 ZM199.321,92.842 C198.857,93.304 198.249,93.535 197.641,93.535 C197.033,93.535 196.425,93.304 195.962,92.842 C195.033,91.920 195.033,90.423 195.962,89.501 L285.271,0.677 C286.198,-0.248 287.703,-0.248 288.630,0.677 C289.558,1.599 289.558,3.096 288.630,4.018 L199.321,92.842 ZM150.607,92.842 C150.144,93.304 149.536,93.535 148.928,93.535 C148.320,93.535 147.711,93.304 147.248,92.842 C146.320,91.920 146.320,90.423 147.248,89.501 L236.557,0.677 C237.484,-0.248 238.990,-0.248 239.917,0.677 C240.845,1.599 240.845,3.096 239.917,4.018 L150.607,92.842 ZM101.894,92.842 C101.430,93.304 100.822,93.535 100.214,93.535 C99.606,93.535 98.998,93.304 98.535,92.842 C97.606,91.920 97.606,90.423 98.535,89.501 L187.844,0.677 C188.771,-0.248 190.277,-0.248 191.203,0.677 C192.131,1.599 192.131,3.096 191.203,4.018 L101.894,92.842 ZM52.060,91.728 C51.907,91.882 51.703,91.960 51.501,91.960 C51.299,91.960 51.095,91.882 50.941,91.728 C50.631,91.421 50.631,90.922 50.941,90.615 L140.249,1.791 C140.556,1.483 141.061,1.483 141.368,1.791 C141.678,2.098 141.678,2.597 141.368,2.904 L52.060,91.728 ZM4.466,92.842 C4.002,93.304 3.394,93.535 2.786,93.535 C2.178,93.535 1.570,93.304 1.106,92.842 C0.178,91.920 0.178,90.423 1.106,89.501 L90.415,0.677 C91.342,-0.248 92.848,-0.248 93.775,0.677 C94.703,1.599 94.703,3.096 93.775,4.018 L4.466,92.842 Z"/>
+							</svg>
+							<svg data-cssecomodaltarget="cog" class="cogUser__cog" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78 82">
+								<path fill-rule="evenodd"  fill="rgb(252, 214, 2)" d="M46.226,81.996 L31.774,81.996 C30.865,81.996 30.061,81.405 29.789,80.537 L27.033,71.802 C23.600,70.464 20.447,68.575 17.633,66.175 L9.933,67.880 C9.040,68.071 8.135,67.672 7.679,66.886 L0.453,54.347 C-0.001,53.558 0.107,52.566 0.722,51.896 L6.345,45.740 C6.099,44.090 5.979,42.529 5.979,40.999 C5.979,39.467 6.099,37.905 6.345,36.255 L0.722,30.100 C0.107,29.429 -0.001,28.437 0.453,27.648 L7.679,15.110 C8.131,14.321 9.038,13.911 9.933,14.115 L17.633,15.821 C20.447,13.418 23.602,11.531 27.033,10.195 L29.789,1.458 C30.061,0.590 30.865,-0.001 31.774,-0.001 L46.226,-0.001 C47.135,-0.001 47.938,0.590 48.211,1.458 L50.966,10.195 C54.398,11.531 57.552,13.418 60.367,15.821 L68.067,14.115 C68.960,13.913 69.865,14.321 70.320,15.110 L77.547,27.648 C78.000,28.437 77.892,29.429 77.278,30.100 L71.654,36.255 C71.900,37.905 72.020,39.467 72.020,40.999 C72.020,42.529 71.900,44.090 71.654,45.740 L77.278,51.896 C77.892,52.566 78.000,53.558 77.547,54.347 L70.320,66.886 C69.865,67.672 68.958,68.068 68.067,67.880 L60.367,66.175 C57.552,68.575 54.400,70.464 50.966,71.802 L48.211,80.537 C47.938,81.405 47.135,81.996 46.226,81.996 ZM33.299,77.823 L44.701,77.823 L47.302,69.573 C47.497,68.948 47.977,68.453 48.593,68.232 C52.226,66.949 55.520,64.975 58.384,62.364 C58.886,61.908 59.574,61.726 60.235,61.871 L67.475,63.475 L73.176,53.585 L67.902,47.810 C67.465,47.333 67.274,46.679 67.388,46.040 C67.703,44.247 67.855,42.596 67.855,40.999 C67.855,39.399 67.703,37.749 67.388,35.956 C67.274,35.316 67.465,34.662 67.902,34.185 L73.176,28.411 L67.475,18.520 L60.235,20.124 C59.576,20.269 58.886,20.087 58.384,19.631 C55.518,17.021 52.226,15.046 48.593,13.765 C47.977,13.547 47.497,13.050 47.302,12.424 L44.701,4.172 L33.299,4.172 L30.698,12.424 C30.503,13.050 30.022,13.547 29.406,13.765 C25.774,15.046 22.481,17.021 19.616,19.631 C19.113,20.087 18.413,20.267 17.765,20.124 L10.524,18.520 L4.824,28.411 L10.097,34.185 C10.534,34.662 10.726,35.316 10.612,35.956 C10.297,37.749 10.144,39.399 10.144,40.999 C10.144,42.596 10.297,44.247 10.612,46.040 C10.726,46.679 10.534,47.333 10.097,47.810 L4.824,53.585 L10.524,63.475 L17.765,61.871 C18.416,61.728 19.113,61.908 19.616,62.364 C22.479,64.975 25.774,66.949 29.406,68.232 C30.022,68.453 30.503,68.948 30.698,69.573 L33.299,77.823 ZM39.000,60.518 C28.255,60.518 19.514,51.761 19.514,40.999 C19.514,30.234 28.255,21.477 39.000,21.477 C49.744,21.477 58.485,30.234 58.485,40.999 C58.485,51.761 49.744,60.518 39.000,60.518 ZM39.000,25.650 C30.551,25.650 23.679,32.534 23.679,40.999 C23.679,49.461 30.551,56.345 39.000,56.345 C47.448,56.345 54.320,49.461 54.320,40.999 C54.320,32.534 47.448,25.650 39.000,25.650 Z"/>
+							</svg>
+							<svg data-cssecomodaltarget="user" class="cogUser__user" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 95 71"> 
+								<path fill-rule="evenodd"  fill="rgb(252, 212, 2)" d="M92.524,64.062 L62.398,64.062 L62.398,68.536 C62.398,69.905 61.291,71.013 59.923,71.013 L2.475,71.013 C1.107,71.013 0.000,69.905 0.000,68.536 L0.000,58.378 C0.000,53.962 2.400,49.894 6.267,47.761 L16.745,41.976 C12.960,37.395 10.771,31.131 10.771,24.596 C10.771,11.023 19.935,-0.015 31.199,-0.015 C42.462,-0.015 51.628,11.023 51.628,24.596 C51.628,31.126 49.438,37.395 45.653,41.976 L51.752,45.343 L59.000,41.342 C56.332,37.835 54.801,33.211 54.801,28.408 C54.801,17.824 61.994,9.214 70.834,9.214 C79.673,9.214 86.866,17.824 86.866,28.408 C86.866,33.211 85.336,37.835 82.667,41.342 L89.957,45.367 C93.068,47.084 94.999,50.358 94.999,53.914 L94.999,61.585 C94.999,62.954 93.892,64.062 92.524,64.062 ZM39.997,40.728 C44.181,37.028 46.678,30.996 46.678,24.596 C46.678,13.757 39.734,4.938 31.199,4.938 C22.665,4.938 15.721,13.757 15.721,24.596 C15.721,31.001 18.217,37.032 22.401,40.728 C23.006,41.265 23.310,42.058 23.223,42.856 C23.133,43.659 22.662,44.365 21.959,44.752 L8.658,52.095 C6.371,53.358 4.950,55.766 4.950,58.378 L4.950,66.060 L57.448,66.060 L57.448,61.585 L57.448,58.378 C57.448,55.766 56.027,53.358 53.743,52.095 L40.439,44.752 C39.736,44.365 39.265,43.659 39.176,42.856 C39.088,42.058 39.393,41.265 39.997,40.728 ZM90.049,53.914 C90.049,52.163 89.096,50.547 87.564,49.701 L77.519,44.158 C76.816,43.770 76.344,43.064 76.255,42.261 C76.168,41.463 76.472,40.670 77.077,40.133 C80.105,37.453 81.915,33.071 81.915,28.408 C81.915,20.557 76.944,14.168 70.834,14.168 C64.723,14.168 59.751,20.557 59.751,28.408 C59.751,33.066 61.562,37.453 64.593,40.138 C65.195,40.670 65.499,41.463 65.413,42.261 C65.323,43.064 64.851,43.770 64.148,44.158 L56.849,48.186 C56.979,48.271 57.094,48.373 57.221,48.461 C57.402,48.588 57.579,48.717 57.751,48.853 C57.993,49.043 58.223,49.241 58.448,49.447 C58.611,49.596 58.772,49.746 58.925,49.903 C59.135,50.118 59.332,50.342 59.525,50.571 C59.668,50.741 59.812,50.909 59.946,51.087 C60.124,51.323 60.285,51.570 60.445,51.819 C60.566,52.006 60.691,52.191 60.801,52.385 C60.948,52.643 61.075,52.911 61.203,53.180 C61.298,53.380 61.399,53.575 61.483,53.780 C61.600,54.064 61.692,54.359 61.787,54.652 C61.852,54.853 61.928,55.049 61.983,55.254 C62.071,55.585 62.130,55.925 62.190,56.265 C62.221,56.441 62.267,56.613 62.291,56.792 C62.360,57.314 62.398,57.843 62.398,58.378 L62.398,59.109 L90.049,59.109 L90.049,53.914 Z"/>
+							</svg>
+						</div>
+					</div>
+					<div class="menuBurger">
+						<svg id="burger" class="open" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+							<path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+							<path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+							<path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/>
+						</svg>
+					</div>
+					<div class="menu">
+						<svg class="close" viewBox="0 0 365.696 365.696" xmlns="http://www.w3.org/2000/svg">
+							<path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/>
+						</svg>
+						<ul>
+							<li><a href="#"><span>Home</span></a></li>
+							<li><a href="#"><span>About</span></a></li>
+							<li><a href="#"><span>Event</span></a></li>
+							<li><a href="#"><span>Contact</span></a></li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eligendi.</p>
 					</div>
 				</div>
-				<!-- END test -->
+			</header>
+			<section id="section1" class="subHeader">
+				<div class="container-fluid">
+					<div class="coloane col_1">
+						<div class="ttl">
+							<h1>
+								<span class="black">Black</span>
+								<span class="friday">Friday</span>
+								<svg viewBox="0 0 1220 522" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g id="shape">
+										<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M1160.11 495.345L990.135 499.53L808.573 504.469L405.212 516.695L294.774 520.066L266.503 520.93L252.266 521.364C247.466 521.489 242.854 521.716 237.757 521.696C217.669 521.701 196.498 517.681 176.267 509.699C155.975 501.748 136.689 490.092 120.175 475.708C103.697 461.331 90.0425 444.349 80.5225 426.253C75.7675 417.246 72.0531 407.982 69.4588 398.693L67.6974 391.78L66.1769 385.177L63.1471 372.019L51.2657 320.049L6.40094 122.218L3.74517 110.362L3.08375 107.406L2.47476 104.281L1.88493 101.16L1.4675 98.0564C0.38967 89.8062 0.380596 81.694 1.44734 73.9144C3.51327 58.4257 10.07 44.3922 20.1103 32.8941C30.0377 21.4726 43.5696 12.6278 59.4699 7.09034C75.2079 1.56198 93.2972 -0.694307 112.075 0.447442L316.498 13.2395L507.911 25.6082L856.507 49.0529L937.216 54.4986L957.021 55.8349L966.869 56.499C970.163 56.7358 973.356 56.894 976.782 57.2416C990.267 58.5517 1004.78 62.6158 1019.05 69.2235C1033.28 75.7827 1047.3 84.7283 1059.9 95.3235C1072.51 105.938 1083.73 118.195 1092.59 131.072C1097.04 137.528 1100.89 144.141 1104.07 150.759C1105.63 154.09 1107.07 157.369 1108.49 160.64L1112.8 170.503L1130.28 210.356L1203.36 376.439C1206.46 383.596 1209.88 390.785 1212.57 397.991C1215.24 405.206 1217.2 412.386 1218.39 419.369C1220.83 433.428 1219.96 446.611 1216.11 457.862C1212.26 469.227 1205.23 478.549 1195.64 484.984C1186.01 491.499 1173.8 495.059 1160.11 495.345ZM1160.11 495.345C1173.78 495.015 1185.96 491.413 1195.54 484.867C1205.08 478.402 1212.06 469.06 1215.86 457.696C1219.66 446.446 1220.49 433.282 1218.02 419.263C1216.82 412.3 1214.84 405.146 1212.16 397.958C1209.47 390.794 1206.03 383.597 1202.91 376.439L1128.66 210.303L1110.77 170.421L1106.33 160.549C1104.86 157.26 1103.38 153.986 1101.83 150.766C1098.65 144.311 1094.82 137.881 1090.42 131.624C1081.66 119.139 1070.65 107.332 1058.37 97.1726C1046.1 87.0279 1032.53 78.5439 1018.84 72.3948C1005.11 66.1993 991.249 62.4939 978.429 61.4257C975.24 61.1425 971.957 61.0226 968.708 60.8362L958.912 60.3142L939.208 59.2652L858.892 54.9874L511.486 36.408L320.127 25.6667L115.402 13.7524C98.7993 12.7417 82.8869 14.7369 69.0101 19.6183C55.0084 24.5028 43.0695 32.3167 34.3238 42.414C25.4864 52.5658 19.7131 64.9366 17.9103 78.5852C16.9776 85.4347 16.9877 92.5774 17.9395 99.8572L18.3045 102.594L18.8298 105.35L19.3632 108.111L20.0226 111.058L22.6703 122.884L66.2727 320.19L77.6348 372.033L80.4902 385.16L81.923 391.749L83.4495 398.059C85.6798 406.438 88.9203 414.802 93.1067 422.955C101.485 439.328 113.635 454.806 128.438 468.02C143.279 481.238 160.73 492.064 179.191 499.559C197.605 507.085 216.975 511.037 235.527 511.308C240.068 511.401 244.963 511.247 249.704 511.192L263.967 510.97L292.293 510.529L402.995 508.807L807.841 502.423L989.924 498.991L1160.11 495.345Z" fill="black"/>
+									</g>
+									<g id="shape2">
+										<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M1120.35 468.709L254.726 490.385C183.283 492.174 112.754 442.339 99.199 380.346L43.088 123.725C30.978 68.336 77.471 28.342 143.502 32.168L963.613 79.686C1011.03 82.433 1063.93 120.765 1082.93 166.071L1170.67 375.315C1191.63 425.288 1169.69 467.473 1120.35 468.709Z" fill="#202020"/>
+									</g>
+								</svg>
+							</h1>
+						</div>
+							
+					</div>
+					<div class="coloane col_2">2</div>
+				</div>
 			</section>
 			<footer id="footer" class="siteFooter">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<p class="copy"><span>&copy; <span id="lp_year"></span></span> <a href="#top" class="csseco_scrollTo">BrandName</a></p>
+							<p class="copy"><span>&copy; <span id="lp_year"></span></span> <a href="#top" class="csseco_scrollTo">Black Friday</a> | <a href="https://www.freepik.com/free-psd/landing-page-black-friday-clearance_11008275.htm" target="_blank">Designed by Freepik</a></p>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<!-- 
-			Za Form
-			* Do not use this if you use multiple forms
-		-->	
-		<div class="form-wrap pForm" id="start-trading">
-			<div class="innercontainer">
-				<div class="formouter" id="form1">
-					<form class="submitformmain">
-						<div class="tradinginner">
-							<div class="taringinnerpart tradinginnerright">
-								<div class="fields">
-									<div class="allformfields">
-										<div class="fieldsline">
-											<div class="row">
-												<div class="col-12">
-													<h3 class="form_ttl">Richiedi GRATIS tutte le npm auinfo che desideri</h3>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-12">
-													<div class="inputnamepart inputnamepartleft formEl fname">
-														<label class="label d-none" for="firstname">Nome</label> <input type="text" id="fname" class="nameclass fnameclass form-control" name="userFirstName" placeholder="Nome">
-														<div id="fnameerror" class="inputerror fnameerrorclass"></div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="inputnamepart inputnamepartright formEl lname desk991">
-														<label class="label d-none" for="lastname">Cognome</label> <input type="text" id="lname" class="nameclass lnameclass lnamedesk991 form-control" name="userLastName" placeholder="Cognome">
-														<div id="lnameerror" class="inputerror lnameerrorclass"></div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="formEl mail input email">
-														<label class="label d-none" for="email">E-mail</label> <input type="email" name="email" id="userEmail" class="useremailclass form-control" placeholder="E-mail">
-														<div id="emailerror" class="inputerror emailerrorclass"></div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="input country inputfirstincol formEl">
-														<div class="countryselect"><label class="label d-none" for="registerCountry">Paese</label> <select id="country-selector" class="counteryselectorclass form-control"></select></div>
-														<div id="countryerror" class="inputerror countryerrorclass"></div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="input phone formEl clearfix">
-														<div class="input prefix clearfix"><label class="label d-none" for="phone">Telefono</label> <input id="phoneprefix" class="phoneprefixclass phone-prefix form-control" type="text" name="phone-country-code" value="" readonly="readonly"> <input id="phonenumber" class="phonenumberclass phone-number form-control" name="phone" type="tel" placeholder="Telefono"></div>
-														<div id="phoneerror" class="inputerror phoneerrorclass"></div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="formEl formbuttonspart">
-														<div class="startbuttonandagreement">
-															<div class="startbutton clearfix">
-																<button type="submit" id="form_button" class="formsubmitmain frombuttonclass doSubmit">Richiedi informazioni</button>
-																<div id="checksubmit" class="formcheckmain sumbitchecker">Richiedi informazioni</div>
-																<div id="submiterror" class="submiterror"></div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-12 text-left">
-													<div class="formEl agreementC risklink">
-														<div class="agreement"><input type="checkbox" id="agreeinput" class="agreeinputclass" checked="checked"> <label for="agreeinput"><span>Acconsento a ricevere comunicazione da BrandName</span></label></div>
-														<div id="notagreeerror" class="agreementerror"></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-
-		
-		<!--  
-			Multiple forms (2)
-			* use form.form-1 and form.form-2
-			* let form.hiddenform with "display: none" anywere in the document
-			* go to ./gulpfile.js -> jsTask() and do not exclude forms.js
-		-->
-		<!--
-		<form class="form-1" novalidate="novalidate">
-			<div class="row">
-				<div class="col-12 form-1-field-1">
-					<input type="text" class="form-control form-1-first-name" name="form-1-first-name" placeholder="Inserire nome">
-					<div class="form-1-first-name-error error-div"></div>          
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-1-field-2">
-					<input type="text" class="form-control form-1-last-name" name="form-1-last-name" placeholder="Inserire cognome">
-					<div class="form-1-last-name-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-1-field-3">
-					<input type="email" class="form-control form-1-email" name="form-1-email" placeholder="Inserire email">
-					<div class="form-1-email-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-1-field-5">
-					<div>
-						<select class="form-control form-1-select-country" onchange="form1SelectPrefix()">
-						<option value="" selected="">Selezionare il Paese</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="MM">Burma (Myanmar)</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="PF">French Polynesia</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova, Republic Of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint BarthÃ©lemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States of America</option><option value="UY">Uruguay</option><option value="VI">US Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="WF">Wallis And Futuna</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="MM">Burma (Myanmar)</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="PF">French Polynesia</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova, Republic Of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RO" selected="">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint BarthÃ©lemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States of America</option><option value="UY">Uruguay</option><option value="VI">US Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="WF">Wallis And Futuna</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
-					</div>
-					<div class="form-1-select-country-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-1-field-4">
-					<div class="clearfix">
-						<input type="text" value="" class="form-control form-1-prefix phone-prefix" name="form-1-prefix" readonly="">
-						<input type="tel" class="form-control form-1-phone phone-number" name="form-1-phone" placeholder="Telefono">
-					</div>
-					<div class="form-1-phone-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-1-submit-button-container">
-					<button type="submit" class="form-1-submit-button font-bold">RICHIEDI</button>
-				</div>
-				<div class="form-1-submit-button-error error-div"></div>
-			</div>
-			<div class="row">
-				<div class="col-12 agreementC risklinks futura-text">
-					<div class="agreements">
-						<label><input type="checkbox" id="agreeinputs" class="agreeinputsclasses form-1-checkbox" checked=""><span class="check-text">Acconsento a ricevere comunicazioni da Traders Academic.</span></label>
-					</div>
-					<div class="form-1-checkbox-error error-div"></div>
-				</div>
-			</div>
-		</form>
-		<form class="form-2" novalidate="novalidate">
-			<div class="row">
-				<div class="col-12">
-					<div class="ttlW">
-						<h3>Registrati adesso</h3>
-						<p>(La maggior parte degli iscritti comincia a guadagnare in meno di 7 minuti)</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-field-1">
-					<input type="text" class="form-control form-2-first-name" name="form-2-first-name" placeholder="Inserire nome">
-					<div class="form-2-first-name-error error-div"></div>      
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-field-2">
-					<input type="text" class="form-control form-2-last-name" name="form-2-last-name" placeholder="Inserire cognome">
-					<div class="form-2-last-name-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-field-3">
-					<input type="email" class="form-control form-2-email" name="form-2-email" placeholder="Inserire email">
-					<div class="form-2-email-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-field-5">
-					<div class="countryselect">
-						<select class="form-control form-2-select-country" onchange="form2SelectPrefix()">
-							<option value="" selected="">Selezionare il Paese</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="MM">Burma (Myanmar)</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="PF">French Polynesia</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova, Republic Of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint BarthÃ©lemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States of America</option><option value="UY">Uruguay</option><option value="VI">US Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="WF">Wallis And Futuna</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="MM">Burma (Myanmar)</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="PF">French Polynesia</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova, Republic Of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RO" selected="">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint BarthÃ©lemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States of America</option><option value="UY">Uruguay</option><option value="VI">US Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="WF">Wallis And Futuna</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
-					</div>
-					<div class="form-2-select-country-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-field-4">
-					<div class="clearfix">
-						<input type="text" value="" class="form-control form-2-prefix phone-prefix" name="form-2-prefix" id="prefix-aside" readonly="">
-						<input type="tel" class="form-control form-2-phone phone-number" name="form-2-phone" id="phonenumber2" placeholder="Telefono">
-					</div>
-					<div class="form-2-phone-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 form-2-submit-button-wrapper">
-					<div class="form-2-submit-button-container">
-						<button type="submit" class="form-2-submit-button font-bold form-aside-button">COMINCIA ADESSO</button>
-					</div>
-					<div class="form-2-submit-button-error error-div"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 agreementC risklinks futura-text">
-					<div class="agreements">
-						<label><input type="checkbox" id="agreeinputs" class="agreeinputsclasses form-2-checkbox" checked=""><span class="check-text">Acconsento a ricevere comunicazioni da Traders Academic.</span></label>
-					</div>
-					<div class="form-2-checkbox-error error-div"></div>
-				</div>
-			</div>
-		</form>
-
-		<div class="hiddenform" style="display: none;">
-			<div>
-				<form class="submitformmain" novalidate="novalidate"><img id="go2cloudpix" height="1px" width="1px" style="display:none"><img id="newadwords1" height="1px" width="1px" style="display:none">
-					<div class="field1">
-						<input type="text" class="fnameclass input-first-name" name="userFirstName" placeholder="Nome">
-						<div class="inputerror error-div error-div1 fnameerror"></div>                                                      
-					</div>
-					<div class="field2">
-						<input type="text" class="lnameclass lnamedesk991 lnamemob990 input-last-name" name="userLastName" placeholder="Cognome">
-						<div class="inputerror error-div error-div2 lnameerror"></div>
-					</div>
-					<div class="input field3">
-						<input type="email" name="email" id="userEmail" class="useremailclass" placeholder="E-mail">
-						<div class="inputerror emailerrorclass error-div error-div3"></div>
-					</div>
-					<div class="input field4">
-						<div class="input">
-							<input class="phoneprefixclass phone-prefix" type="text" name="phone-country-code" value="" readonly=""><input id="phonenumber" class="phonenumberclass phone-number" name="phone" type="tel" placeholder="Telefono">
-						</div>
-						<div id="phoneerror" class="inputerror phoneerrorclass error-div error-div4"></div>
-					</div>
-					<div class="input field5">
-						<div class="countryselect">
-							<select id="country-selector" class="counteryselectorclass country-select"><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="MM">Burma (Myanmar)</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="CD">Democratic Republic of the Congo</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="PF">French Polynesia</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle Of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States Of</option><option value="MD">Moldova, Republic Of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="KP">North Korea</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Islands</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="CG">Republic of the Congo</option><option value="RO" selected="">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="BL">Saint BarthÃ©lemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="MF">Saint Martin</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome And Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="KR">South Korea</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States of America</option><option value="UY">Uruguay</option><option value="VI">US Virgin Islands</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="WF">Wallis And Futuna</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
-						</div>
-						<div id="countryerror" class="inputerror countryerrorclass error-div error-div5"></div>
-					</div>
-					<div class="form-submit-button">
-						<div>
-							<button type="submit" id="form-button" class="formsubmitmain font-bold">TRADE BITCOIN</button>
-							<div class="form-submit-button-hover-left"></div>
-							<div class="form-submit-button-hover-right"></div>
-							<div class="formcheckmain sumbitchecker font-bold">TRADE BITCOIN</div>
-							<div class="submiterror error-div error-div6"></div>
-						</div>
-					</div>
-					<div class="agreementC risklink">
-						<div class="agreement">
-							<label class="checkbox-container font-light"><input type="checkbox" id="agreeinput" class="agreeinputclass" checked=""><span class="checkmark"></span>Acconsento a ricevere comunicazioni da FXORO.</label>
-						</div>
-						<div id="notagreeerror" class="agreementerror error-div-checkbox error-div7"></div>
-					</div>
-				</form>
-			</div>
-		</div>
-		-->
-
-
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<!-- popper.min.js is used for dropdowns, popover and tooltips -->
 		<!-- <script src="vendor/popper/popper.min.js"></script> -->
@@ -297,21 +121,6 @@
 		<script src="vendor/gsap/ScrollToPlugin.min.js"></script>
 		<!-- GSAP ScrollTrigger -->
 		<script src="vendor/gsap/ScrollTrigger.min.js"></script>
-		<!-- 
-			*
-			* Edit path for bundle.js, googleanalytics.js, jquery.cookie.js, 
-			* jquery.validate.js and tagmanager.js
-			*
-		-->
-		<script src="../../../assets/js/bundle.js"></script>
-		<script src="../../../assets/js/googleanalytics.js"></script>
-		<script src="../../../assets/js/jquery.cookie.js"></script>
-		<script src="../../../assets/js/jquery.validate.js"></script>
-		<script src="../../../assets/js/tagmanager.js"></script>
-		<script>
-			var lng="EN";
-			var campaignName="BrandName";
-		</script>
 		<script src="dist/js/scsseco_app.js?cb=1584055009736"></script>
 	</body>
 </html>
